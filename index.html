@@ -3,14 +3,27 @@
     <meta charset="utf-8">
     <title>Mocha Tests</title>
     <link href="lib/mocha.css" rel="stylesheet" />
+    <link rel="stylesheet" href="game.css">
 </head>
 <body id="bodytag">
-<img src="inn.jpg" alt="image1" id="inn" onclick="restoreHealth()">
-<img src="dagger.svg" alt="image2" id="dagger" onclick="weaponLog()">
-<img src="bag.png" alt="image3" id="bag" onclick="bagClick()">
 
-  <!-- 👍 YOUR HTML HERE 👍 -->
+  <!-- creating IMG element -->
+  
+<img src="lib/inn.jpg" alt="imageOfInn" id="inn" onclick="restoreHealth()">
+<img src="lib/dagger.svg" alt="imageOfADagger" id="dagger" onclick="weaponLog()">
+<img src="lib/bag.png" alt="imageOfABag" id="bag" onclick="bagClick()">
 
+  <!-- creating onSubmit form -->
+  
+<form onsubmit="return changeHeroName();">
+  <div>
+    <label for="heroname">Insert Hero Name</label>
+    <input type="text" id=HeroName>
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form> 
 
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
